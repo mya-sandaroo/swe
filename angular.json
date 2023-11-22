@@ -30,6 +30,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/theme.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -65,7 +66,8 @@
               "buildTarget": "test:build:production"
             },
             "development": {
-              "buildTarget": "test:build:development"
+              "buildTarget": "test:build:development",
+              "proxyConfig": "./proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
@@ -90,12 +92,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/theme.scss"
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "596c6641-b611-43ee-a002-87e2655aeb36"
   }
 }

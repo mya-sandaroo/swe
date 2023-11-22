@@ -1,0 +1,30 @@
+table {
+    width: 100%;
+}
+
+.appname {
+    /* You can adjust the gradient color stops and direction as needed */
+    background: linear-gradient(to right, #ff5ed1, #ffa866);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* This pushes the button to the right */
+    align-items: center; /* Align items vertically in the center */
+    padding: 10px; /* Adjust the padding as needed */
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+th {
+    font-weight: bold;
+}
+
+.btnClass {
+    height: auto;
+    width: 200px;
+}

@@ -1,0 +1,14 @@
+<h1 mat-dialog-title>
+    <mat-icon color="primary">link</mat-icon>&nbsp;
+    Join Meeting
+</h1>
+<div mat-dialog-content>
+    <mat-form-field class="full-width">
+        <mat-label>Choose restaurant's location</mat-label>
+        <input matInput [(ngModel)]="location"/>
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button color="primary" [mat-dialog-close]="data" (click)="join()">Join</button>
+    <button mat-raised-button color="warn" [mat-dialog-close]="data" cdkFocusInitial>Close</button>
+</div>
